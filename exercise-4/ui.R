@@ -1,4 +1,4 @@
-# ui.R
+# ui.R, exercise 4
 library(shiny)
 library(plotly)
 shinyUI(navbarPage('Electoral College',
@@ -23,12 +23,14 @@ shinyUI(navbarPage('Electoral College',
                    ) 
                    
                    # Create a tabPanel to show your scatter plot
-                   
+                   tabPanel('scatter', 
                             # Add a titlePanel to your tab
-                   
+                            titlePanel('Scatter'),
                             
                             # Create a sidebar layout for this tab (page)
-                   
+                            sidebarPanel(
+                                    
+                            )
                               
                               # Create a sidebarPanel for your controls
                    
