@@ -19,6 +19,14 @@ shinyUI(fluidPage(
     sidebarPanel(
       #selectInput for Men, Women, or Both
       #inputID = sex
+      selectInput(choices = c('Men','Women','Both'),
+                  inputId = 'sex',
+                  selected = 'Both',
+                  label = 'Sex:'),
+      selectInput(choices = c('Agree','Disagree'),
+                  inputId = 'thoughts',
+                  label = 'Who:',
+                  selected = 'Agree')
       
       
       #selectInput for Agree or Disagree
@@ -30,7 +38,7 @@ shinyUI(fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       #give your plot a descriptive name
-       plotOutput("plotNamehere")
+       plotOutput("rolePlot")
     )
   )
 ))
